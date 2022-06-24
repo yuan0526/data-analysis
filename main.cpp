@@ -124,11 +124,7 @@ int main()
             cin >> deltas;
         } //二維數據的數據輸入
 
-        if (deltas == 0)
-        {
-            break;
-        } //資料確認：正確，脫離迴圈
-        else
+        if(deltas == 1)
         {
             while (true)
             {
@@ -164,7 +160,7 @@ int main()
         if (deltas == 0)
         {
             break;
-        } //從 else 出來後 deltas 為 0 的情況
+        } //資料確認：正確，脫離迴圈
     }
 
     /*平均、變異數、標準差*/
