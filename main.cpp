@@ -313,13 +313,19 @@ int main()
             else if (output == "P") //百分位數
             {
                 cout << "第？百分位數:";
-                cin >> k;
-                cout << "\n";
-                cout << P[k];
-                if (k >= 100 || k <= 0)
+                while (true)
                 {
-                    flag = 1;
-                    cout << "請輸入介於0與100之間的數";
+                    cin >> k;
+                    if (k >= 100 || k <= 0)
+                    {
+                        cout << "\n輸入介於1與100之間的數:";
+                    }
+                    else
+                    {
+                        cout << "\n";
+                        cout << P[k];
+                        break;
+                    }
                 }
             }
             else if (output == "Q") //四分位數
